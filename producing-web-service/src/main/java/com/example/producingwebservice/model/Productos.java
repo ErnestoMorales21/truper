@@ -24,7 +24,7 @@ public class Productos {
 	private String descripcion;
 	private Boolean activoBit;
 	
-	 @OneToMany(mappedBy = "productos", cascade = CascadeType.ALL, orphanRemoval = true)
+	 @OneToMany( cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<ListaCompraDetalle> listaComprasDetalle = new ArrayList<ListaCompraDetalle>();
 	
 	

@@ -14,37 +14,37 @@ public class ListaCompraDetalleId implements Serializable{
 	
 
 	
-//	@ManyToOne
-//    @JoinColumn(name = "id_lista")
-//    private ListaCompras listaCompra;
-//	
-//	@ManyToOne
-//    @JoinColumn(name = "producto_id")
-//    private Productos producto;
-//	
-//	
-//
-//    public ListaCompras getListaCompra() {
-//		return listaCompra;
-//	}
-//
-//	public void setListaCompra(ListaCompras listaCompra) {
-//		this.listaCompra = listaCompra;
-//	}
-//
-//	public Productos getProducto() {
-//		return producto;
-//	}
-//
-//	public void setProducto(Productos producto) {
-//		this.producto = producto;
-//	}
+	@ManyToOne
+    @JoinColumn(name = "id_lista")
+    private ListaCompras listaCompra;
+	
+	@ManyToOne
+    @JoinColumn(name = "producto_id")
+    private Productos producto;
+	
+	
 
-	 @Column(name = "lista_compra_id")
-	    private Long listaCompraId;
+    public ListaCompras getListaCompra() {
+		return listaCompra;
+	}
 
-	    @Column(name = "producto_codigo")
-	    private Long productoCodigo;
+	public void setListaCompra(ListaCompras listaCompra) {
+		this.listaCompra = listaCompra;
+	}
+
+	public Productos getProducto() {
+		return producto;
+	}
+
+	public void setProducto(Productos producto) {
+		this.producto = producto;
+	}
+
+//	 @Column(name = "lista_compra_id")
+//	    private Long listaCompraId;
+//
+//	    @Column(name = "producto_codigo")
+//	    private Long productoCodigo;
 	
 
 }
