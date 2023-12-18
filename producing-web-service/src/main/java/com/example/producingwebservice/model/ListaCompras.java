@@ -40,7 +40,7 @@ public class ListaCompras {
     @JoinColumn(name = "idCliente")
     private Clientes clientes;
 	
-	 @OneToMany( cascade = CascadeType.ALL, orphanRemoval = true)
+	 @OneToMany( mappedBy = "listaCompras",cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<ListaCompraDetalle> listaComprasDetalle = new ArrayList<ListaCompraDetalle>();
 	
 

@@ -18,7 +18,15 @@ public class ListaCompraDetalle {
 	
 	@EmbeddedId
     private ListaCompraDetalleId id;
-	
+	@ManyToOne
+    @MapsId("idListaCompra")
+    @JoinColumn(name = "idListaCompra")
+    private ListaCompras listaCompras;
+
+    @ManyToOne
+    @MapsId("codigoProducto")
+    @JoinColumn(name = "codigoProducto")
+    private Productos productos;
 	
 	private int cantidad;
 	
